@@ -1,0 +1,15 @@
+{
+  "name": "HXstomp",
+  "keywords": "Midi",
+  "description": "Library for controlling HX Stomp via Midi",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/w4l1k/HXstomp.git"
+  },
+  "frameworks": "arduino",
+  "platforms":
+  [
+    "atmelavr"
+  ]
+}
