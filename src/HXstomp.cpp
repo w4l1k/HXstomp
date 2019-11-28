@@ -61,7 +61,7 @@ void HXstomp::exp2(byte position)
     position = constrain(position, 0, 100);
     position = map(position, 0, 100, 0, 127);
     byte value constrain(position, 0, 127);
-    sendControlChange(CC_EXP1, value);
+    sendControlChange(CC_EXP2, value);
 };
 void HXstomp::fs1()
 {
