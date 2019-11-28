@@ -133,19 +133,21 @@ public:
      */
    void channelNumberSet(byte channel);
 
-   /**
-     * @brief Sets the position of the EXP1 expression pedal
-     * 
-     * @param position percentage pedal position from 0 to 100
-     */
-   void exp1(byte position);
+  /**
+   * @brief Sets the position of the EXP1 expression pedal
+   * 
+   * @param position percentage pedal position from 0 to 100
+   * @param invertPolarity invert polarity TIP/RING
+   */
+  void exp1(byte position, bool invertPolarity = false);
 
-   /**
-     * @brief Sets the position of the EXP2 expression pedal
-     * 
-     * @param position percentage pedal position from 0 to 100
-     */
-   void exp2(byte position);
+  /**
+   * @brief Sets the position of the EXP2 expression pedal
+   * 
+   * @param position percentage pedal position from 0 to 100
+   * @param invertPolarity invert polarity TIP/RING
+   */
+  void exp2(byte position, bool invertPolarity = false);
 
    /**
      * @brief Switch the FS1 button

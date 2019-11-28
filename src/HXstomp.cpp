@@ -49,20 +49,30 @@ void HXstomp::channelNumberSet(byte channel)
     this->channel = constrain(channel - 1, 0, 15);
 };
 
-void HXstomp::exp1(byte position)
+void HXstomp::exp1(byte position, bool invertPolarity)
 {
+    
     position = constrain(position, 0, 100);
-    position = map(position, 0, 100, 0, 127);
+    if(invertPolarity == true) {
+        position = map(position, 100, 0, 0, 127);
+    } else {
+        position = map(position, 0, 100, 0, 127);
+    }
     byte value constrain(position, 0, 127);
     sendControlChange(CC_EXP1, value);
 };
-void HXstomp::exp2(byte position)
+void HXstomp::exp2(byte position, bool invertPolarity)
 {
     position = constrain(position, 0, 100);
-    position = map(position, 0, 100, 0, 127);
+    if(invertPolarity == true) {
+        position = map(position, 100, 0, 0, 127);
+    } else {
+        position = map(position, 0, 100, 0, 127);
+    }
     byte value constrain(position, 0, 127);
     sendControlChange(CC_EXP2, value);
 };
+
 void HXstomp::fs1()
 {
     sendControlChange(CC_FS1, V_127);
