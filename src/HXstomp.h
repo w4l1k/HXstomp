@@ -84,6 +84,8 @@ private:
    byte bankNumber;
    byte bankLetter;
    byte snapshotNumber;
+   byte exp1Position;
+   byte exp2Position;
    char presetName[5];
    Stream *serial;
 
@@ -393,6 +395,11 @@ public:
      * @param number byte number 1 or 2 or 3
      */
    void snapshotSet(byte number);
+
+
+   int getExp1Positon();
+
+    int getExp2Positon();
 };
 
 #endif

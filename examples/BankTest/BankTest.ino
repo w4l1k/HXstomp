@@ -1,6 +1,6 @@
 #include <HXstomp.h>
 
-HXstomp hxstomp;
+HXstomp hxstomp(10); //MIDI CANAL 10
 
 void setup()
 {

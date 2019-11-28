@@ -9,6 +9,8 @@ HXstomp::HXstomp(byte channel)
     this->bankNumber = 1;
     this->bankLetter = 1;
     this->snapshotNumber = 1;
+    this->exp1Position = 0;
+    this->exp2Position = 0;
 };
 
 HXstomp::~HXstomp(){
@@ -51,7 +53,6 @@ void HXstomp::channelNumberSet(byte channel)
 
 void HXstomp::exp1(byte position, bool invertPolarity)
 {
-    
     position = constrain(position, 0, 100);
     if(invertPolarity == true) {
         position = map(position, 100, 0, 0, 127);
@@ -59,6 +60,7 @@ void HXstomp::exp1(byte position, bool invertPolarity)
         position = map(position, 0, 100, 0, 127);
     }
     byte value constrain(position, 0, 127);
+    exp1Position = value;
     sendControlChange(CC_EXP1, value);
 };
 void HXstomp::exp2(byte position, bool invertPolarity)
@@ -70,6 +72,7 @@ void HXstomp::exp2(byte position, bool invertPolarity)
         position = map(position, 0, 100, 0, 127);
     }
     byte value constrain(position, 0, 127);
+    exp2Position = value;
     sendControlChange(CC_EXP2, value);
 };
 
@@ -392,3 +395,11 @@ void HXstomp::snapshotSet(byte number)
         snapshot3();
     }
 };
+
+   int HXstomp::getExp1Positon() {
+     return exp1Position;
+   }
+
+    int HXstomp::getExp2Positon() {
+     return exp2Position;
+   }
