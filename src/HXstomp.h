@@ -76,362 +76,363 @@ const byte PROGRAM_CHANGE = 0xC0;
 const byte CONTROL_CHANGE = 0xB0;
 const byte TIME_BETWEEN_MIDI_COMMANDS = 20;
 
-enum letter
-{
-  A = 1,
-  B = 2,
-  C = 3
-};
 
 
 class HXstomp
 {
 private:
-  byte channel;
-  byte presetNumber;
-  byte bankNumber;
-  byte bankLetter;
-  byte snapshotNumber;
-  byte exp1Position;
-  byte exp2Position;
-  char presetName[5];
-  Stream *serial;
+   byte channel;
+   byte presetNumber;
+   byte bankNumber;
+   byte bankLetter;
+   byte snapshotNumber;
+   byte exp1Position;
+   byte exp2Position;
+   char presetName[5];
+   Stream *serial;
 
 public:
-  /**
+  enum letter
+  {
+    A = 1,
+    B = 2,
+    C = 3
+  };
+
+   /**
     * @brief Construct a new HXstomp::HXstomp object
     * 
     * @param channel The output channel on which the message will be sent
     (values from 1 to 16). Note: you cannot send to OMNI.
     */
-  HXstomp(byte = 1);
+   HXstomp(byte = 1);
 
-  /**
+   /**
      * @brief Destroy the HXstomp object
      * 
      */
-  ~HXstomp();
+   ~HXstomp();
 
-  void setSerial(Stream *serialObject);
+   void setSerial(Stream *serialObject);
 
-  /**
+   /**
     * @brief Send Control Change message
     * 
     * @param outData1 The first data byte.
     * @param outData2 The second data byte
     */
-  void sendControlChange(byte outData1, byte outData2);
+   void sendControlChange(byte outData1, byte outData2);
 
-  /**
+   /**
      * @brief Send Program Change message
      * 
      * @param outData1 The first data byte.
      */
-  void sendProgramChange(byte outData1);
+   void sendProgramChange(byte outData1);
 
-  /**
+   /**
      * @brief Get the Channel Number object
      * 
      * @return byte channel mumber
      */
-  byte channelNumberGet();
+   byte channelNumberGet();
 
-  /**
+   /**
      * @brief Set the Channel Number object
      * 
      * @param channel channel number
      */
-  void channelNumberSet(byte channel);
+   void channelNumberSet(byte channel);
 
-  /**
+   /**
    * @brief Sets the position of the EXP1 expression pedal
    * 
    * @param position percentage pedal position from 0 to 100
    * @param invertPolarity invert polarity TIP/RING
    */
-  void exp1(byte position, bool invertPolarity = false);
+   void exp1(byte position, bool invertPolarity = false);
 
-  /**
+   /**
    * @brief Sets the position of the EXP2 expression pedal
    * 
    * @param position percentage pedal position from 0 to 100
    * @param invertPolarity invert polarity TIP/RING
    */
-  void exp2(byte position, bool invertPolarity = false);
+   void exp2(byte position, bool invertPolarity = false);
 
-  /**
+   /**
      * @brief Switch the FS1 button
      * 
      */
-  void fs1();
+   void fs1();
 
-  /**
+   /**
      * @brief Switch the FS2 button
      * 
      */
-  void fs2();
+   void fs2();
 
-  /**
+   /**
      * @brief Switch the FS3 button
      * 
      */
-  void fs3();
+   void fs3();
 
-  /**
+   /**
      * @brief Switch the FS4 button
      * 
      */
-  void fs4();
+   void fs4();
 
-  /**
+   /**
      * @brief Switch the FS5 button
      * 
      */
-  void fs5();
+   void fs5();
 
-  /**
+   /**
      * @brief Switch on loop recording
      * 
      */
-  void looperRecord();
+   void looperRecord();
 
-  /**
+   /**
      * @brief Switch on loop overdub recording
      * 
      */
-  void looperRecordOverdub();
+   void looperRecordOverdub();
 
-  /**
+   /**
      * @brief Switch on loop play
      * 
      */
-  void looperPlay();
+   void looperPlay();
 
-  /**
+   /**
      * @brief Switch off  loop play
      * 
      */
-  void looperStop();
+   void looperStop();
 
-  /**
+   /**
      * @brief Turn on loop playback once.
      * 
      */
-  void looperPlayOnce();
+   void looperPlayOnce();
 
-  /**
+   /**
      * @brief Undo / Redo
      * 
      */
-  void looperUndoRedo();
+   void looperUndoRedo();
 
-  /**
+   /**
      * @brief Enable forward loop playback
      * 
      */
-  void looperForward();
+   void looperForward();
 
-  /**
+   /**
      * @brief Enable loop playback reverse
      * 
      */
-  void looperReverse();
+   void looperReverse();
 
-  /**
+   /**
      * @brief Enable loop playback at full speed
      * 
      */
-  void loopeFullSpeed();
+   void loopeFullSpeed();
 
-  /**
+   /**
      * @brief Enable loop playback at half speed
      * 
      */
-  void looperHalfSpeed();
+   void looperHalfSpeed();
 
-  /**
+   /**
      * @brief Tap tempo click
      * 
      */
-  void tapTempo();
+   void tapTempo();
 
-  /**
+   /**
      * @brief Tuner screen on/of
      * 
      */
-  void tuner();
+   void tuner();
 
-  /**
+   /**
      * @brief Enable snapshot 1
      * 
      */
-  void snapshot1();
+   void snapshot1();
 
-  /**
+   /**
      * @brief Enable snapshot 2
      * 
      */
-  void snapshot2();
+   void snapshot2();
 
-  /**
+   /**
      * @brief Enable snapshot 3
      * 
      */
-  void snapshot3();
+   void snapshot3();
 
-  /**
+   /**
      * @brief Next snapshot
      * 
      */
-  void snapshotNext();
+   void snapshotNext();
 
-  /**
+   /**
      * @brief Previous snapshot
      * 
      */
-  void snapshotPrev();
+   void snapshotPrev();
 
-  /**
+   /**
      * @brief All bypass on
      * 
      */
-  void bypassAllON();
+   void bypassAllON();
 
-  /**
+   /**
      * @brief All bypass off
      * 
      */
-  void bypassAllOFF();
+   void bypassAllOFF();
 
-  /**
+   /**
      * @brief Enable stomp mode
      * 
      */
-  void modeStomp();
+   void modeStomp();
 
-  /**
+   /**
      * @brief Enable scroll mode
      * 
      */
-  void modeScrool();
+   void modeScrool();
 
-  /**
+   /**
      * @brief Enable preset mode
      * 
      */
-  void modePreset();
+   void modePreset();
 
-  /**
+   /**
      * @brief Enable preset snapshot
      * 
      */
-  void modeSnapshot();
+   void modeSnapshot();
 
-  /**
+   /**
      * @brief Change to next mode
      * 
      */
-  void modeNext();
+   void modeNext();
 
-  /**
+   /**
      * @brief Change to previous mode
      * 
      */
-  void modePrev();
+   void modePrev();
 
-  /**
+   /**
     * @brief Change to next bank
     * 
     * @param samePosition bool - if false -  change to the first position of preset in the next bank, for example: current bank 10 preset B - next bank 10 preset A
     * if true - change to the same preset position in the next bank, for example:  current bank 10 preset B - next bank 10 preset B                         - 
     */
-  void bankNext(bool samePosition = false);
+   void bankNext(bool samePosition = false);
 
-  /**
+   /**
   * @brief Change to previous bank
   * 
   * @param samePosition bool - if false -  change to the first position of preset in the previous bank, for example: current bank 10 preset B - next bank 9 preset A
   * if true - change to the same preset position in the previous  bank, for example:  current bank 10 preset B - next bank 9 preset B 
   *                         - 
   */
-  void bankPrev(bool samePosition = false);
+   void bankPrev(bool samePosition = false);
 
-  /**
+   /**
      * @brief Change to next preset
      * 
      */
-  void presetNext();
+   void presetNext();
 
-  /**
+   /**
      * @brief Change to previous preset
      * 
      */
-  void presetPrev();
+   void presetPrev();
 
-  /**
+   /**
      * @brief Get the Preset Number 
      * 
      * @return byte preset number
      */
-  byte presetGet();
+   byte presetGet();
 
-  /**
+   /**
      * @brief Get the Bank Number 
      * 
      * @return byte bank number
      */
-  byte bankNumberGet();
+   byte bankNumberGet();
 
-  /**
+   /**
      * @brief Get the Bank letter 
      * 
      * @return char bank letter
      */
-  char bankLetterGet();
+   char bankLetterGet();
 
-  /**
+   /**
      * @brief Set the bank number on HX Stomp
      * 
      * @param number byte bank number from 1 - 42
      * @param letter letter bank letter A or B or C 
      */
-  void bankSet(byte number, letter letter);
+   void bankSet(byte number, letter letter);
 
-  /**
+   /**
      * @brief Set the bank number on HX Stomp
      * 
      * @param number byte bank number from 1 - 42
      * @param AorBorC byte bank letter A = 1, B = 2, C = 3
      */
-  void bankSet(byte number, byte AorBorC = 1);
+   void bankSet(byte number, byte AorBorC = 1);
 
-  /**
+   /**
      * @brief Set the preset number on HX Stomp
      * 
      * @param number byte preset number from 0 - 125
      */
-  void presetSet(byte number);
+   void presetSet(byte number);
 
-  /**
+   /**
      * @brief Set the Snapshot 
      * 
      * @param number byte number 1 or 2 or 3
      */
-  void snapshotSet(byte number);
+   void snapshotSet(byte number);
 
-  /**
+   /**
    * @brief Return Exp1 Positon 
    * 
    * @return int exp position
    */
-  int getExp1Positon();
+   int getExp1Positon();
 
-  /**
+   /**
    * @brief Return Exp2 Positon 
    * 
    * @return int exp position
    */
-  int getExp2Positon();
+   int getExp2Positon();
 };
 
 #endif

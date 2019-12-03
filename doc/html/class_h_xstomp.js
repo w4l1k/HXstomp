@@ -1,5 +1,10 @@
 var class_h_xstomp =
 [
+    [ "letter", "class_h_xstomp.html#a401edbfbd91e701c8c2f8012da1670be", [
+      [ "A", "class_h_xstomp.html#a401edbfbd91e701c8c2f8012da1670beaa347c57cc749656aa4cb029bc5468642", null ],
+      [ "B", "class_h_xstomp.html#a401edbfbd91e701c8c2f8012da1670beaae5f9a6bb1045cdcb4de4af94dcc0cd7", null ],
+      [ "C", "class_h_xstomp.html#a401edbfbd91e701c8c2f8012da1670beae899b6d0c44bf8914987c9ebef2bad0d", null ]
+    ] ],
     [ "HXstomp", "class_h_xstomp.html#a6fd8ec55405027a895c97f316b1043ef", null ],
     [ "~HXstomp", "class_h_xstomp.html#a7bab0f7922c390498adb0498275f3f7a", null ],
     [ "bankLetterGet", "class_h_xstomp.html#ac5c8f885d0d1f5422ca3b54fa854addd", null ],

@@ -1,11 +1,6 @@
 var _h_xstomp_8h =
 [
     [ "HXstomp", "class_h_xstomp.html", "class_h_xstomp" ],
-    [ "letter", "_h_xstomp_8h.html#af728b7f044f54e9819b64d6f30ad2752", [
-      [ "A", "_h_xstomp_8h.html#af728b7f044f54e9819b64d6f30ad2752a42a4ade1acd55a49164099104990e09f", null ],
-      [ "B", "_h_xstomp_8h.html#af728b7f044f54e9819b64d6f30ad2752a3f2a77ecd272aa6d6b5902faa5e5fc68", null ],
-      [ "C", "_h_xstomp_8h.html#af728b7f044f54e9819b64d6f30ad2752a739ce3f516592d245d16fd8a3893472c", null ]
-    ] ],
     [ "CC_ALL_BYPASS", "_h_xstomp_8h.html#a359fbf56f5908acf582e3e94868f1657", null ],
     [ "CC_EXP1", "_h_xstomp_8h.html#ad1884ee26c549f57e739e5c956587a76", null ],
     [ "CC_EXP2", "_h_xstomp_8h.html#a28635353d79dfbeb68fc2ccefee28934", null ],
