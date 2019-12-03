@@ -152,127 +152,130 @@ $(document).ready(function(){initNavTree('_h_xstomp_8h_source.html','');});
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  C = 3</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;};</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_h_xstomp.html">   86</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_h_xstomp.html">HXstomp</a></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordtype">byte</span> channel;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">byte</span> presetNumber;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">byte</span> bankNumber;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">byte</span> bankLetter;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">byte</span> snapshotNumber;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">byte</span> exp1Position;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">byte</span> exp2Position;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">char</span> presetName[5];</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  Stream *serial;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;  <a class="code" href="class_h_xstomp.html#a6fd8ec55405027a895c97f316b1043ef">HXstomp</a>(<span class="keywordtype">byte</span> = 1);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  <a class="code" href="class_h_xstomp.html#a7bab0f7922c390498adb0498275f3f7a">~HXstomp</a>();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;  <span class="keywordtype">void</span> setSerial(Stream *serialObject);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a0e3f70030ff3bb856e4694a4000ff70a">sendControlChange</a>(<span class="keywordtype">byte</span> outData1, <span class="keywordtype">byte</span> outData2);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a169362bc1245371b3c7bd51d146e47d6">sendProgramChange</a>(<span class="keywordtype">byte</span> outData1);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;  <span class="keywordtype">byte</span> <a class="code" href="class_h_xstomp.html#ae99f306b354fa4b2600efd931fdb8389">channelNumberGet</a>();</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a59b3f79b3047fa0414b2688a2d5b99c9">channelNumberSet</a>(<span class="keywordtype">byte</span> channel);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a458ca37cfb7c8c757af7231c4ae21c90">exp1</a>(<span class="keywordtype">byte</span> position, <span class="keywordtype">bool</span> invertPolarity = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a316f4ccd3d1b7945ba277fae74315980">exp2</a>(<span class="keywordtype">byte</span> position, <span class="keywordtype">bool</span> invertPolarity = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a8a4d939ec593f903ed0344f9aa0e4310">fs1</a>();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#aba43c153fe945edd72e38a3ea5978f7c">fs2</a>();</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#af74fc7de0ab5d5782abfa4c1ab02e92c">fs3</a>();</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a9c8771c045d2c09340f159ac998af74d">fs4</a>();</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ad1bccd13d06c53328fad448b68ca9b7a">fs5</a>();</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#acfa7183417b5dfcbc82adc0e38cfc77f">looperRecord</a>();</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a4e0510310f0aa2d658e160404b973dbe">looperRecordOverdub</a>();</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#adc17ecb8f88f44b0d85db652dc3ca039">looperPlay</a>();</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ab836fae40769ea0df397b78979f27944">looperStop</a>();</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160; </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a1a4dcf53f005b80f2fd1e61425db2c9c">looperPlayOnce</a>();</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a8fd0456a5cd09a4dbfc0beb8fb811729">looperUndoRedo</a>();</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a5f11f84516dbf241dc38875f09088863">looperForward</a>();</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a9aa99bd5a9b26b69d454d3ee04bbe644">looperReverse</a>();</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ab4de1044b649501fb352998e7924eb25">loopeFullSpeed</a>();</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160; </div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a78c76179705a874caabb243e641c21ad">looperHalfSpeed</a>();</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a865997cc32abe6341de43b206155a095">tapTempo</a>();</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ae085b6109cddc9ea7bf0a36a4bd4b6d1">tuner</a>();</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a55022f7f0c583a7f6122d372f98b251f">snapshot1</a>();</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a69e3980e4558d29d448070f84ce85ea4">snapshot2</a>();</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160; </div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a74c05721abfd0f1d7f94f441cb4000e2">snapshot3</a>();</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ab6e1821b8e33c4ee868abdfc43b8d198">snapshotNext</a>();</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ab18ff207ecb92e5aa7bc0371086e4cc6">snapshotPrev</a>();</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#adb030e34fd3dc1f1f2cd60b89bd288b4">bypassAllON</a>();</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a6a972e6150edb4cd0f635ef9bc9232b2">bypassAllOFF</a>();</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160; </div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ab6d145cb0dfafacde5cf9d975e3a9b05">modeStomp</a>();</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a1f7b3a5a90fc8d3143065c3144b0c297">modeScrool</a>();</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ad963e8d152cad365d1f32f5421d9b5cf">modePreset</a>();</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#af4a44b484f74904cf8b71222ee15dfaa">modeSnapshot</a>();</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160; </div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#aa4e95a6cdf73c2738d3075e80fcce16d">modeNext</a>();</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ab4473f423ec65101f26a65055d3e8725">modePrev</a>();</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160; </div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a2a78f66b48e42dc9decddea21717e0af">bankNext</a>(<span class="keywordtype">bool</span> samePosition = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#abe513c03102ed65a17775f30659259e8">bankPrev</a>(<span class="keywordtype">bool</span> samePosition = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160; </div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a9b810b5c45d3891c274e9a6560cd0682">presetNext</a>();</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a783426da1d78e31af5218ad11ba3ab7d">presetPrev</a>();</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160; </div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;  <span class="keywordtype">byte</span> <a class="code" href="class_h_xstomp.html#ac0247f5248960ace64102ee66631e73f">presetGet</a>();</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160; </div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;  <span class="keywordtype">byte</span> <a class="code" href="class_h_xstomp.html#a79d25d28026a430b14f04385175ff0e8">bankNumberGet</a>();</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160; </div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;  <span class="keywordtype">char</span> <a class="code" href="class_h_xstomp.html#ac5c8f885d0d1f5422ca3b54fa854addd">bankLetterGet</a>();</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a0735e47b17e44b5451b9a6bca8159fa7">bankSet</a>(<span class="keywordtype">byte</span> number, letter letter);</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160; </div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a7303aede48d7daf342e2ca6688ddfb2e">presetSet</a>(<span class="keywordtype">byte</span> number);</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160; </div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a99c9f17a9c2cafb2edebc5bafbdc8077">snapshotSet</a>(<span class="keywordtype">byte</span> number);</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160; </div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="class_h_xstomp.html#abfb34a83f376a39040d746078291492b">getExp1Positon</a>();</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="class_h_xstomp.html#a2986991976bad0399307ea48c1f698a3">getExp2Positon</a>();</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;};</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160; </div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_h_xstomp.html">   87</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_h_xstomp.html">HXstomp</a></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  <span class="keywordtype">byte</span> channel;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keywordtype">byte</span> presetNumber;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keywordtype">byte</span> bankNumber;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordtype">byte</span> bankLetter;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">byte</span> snapshotNumber;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordtype">byte</span> exp1Position;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;  <span class="keywordtype">byte</span> exp2Position;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordtype">char</span> presetName[5];</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  Stream *serial;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <a class="code" href="class_h_xstomp.html#a6fd8ec55405027a895c97f316b1043ef">HXstomp</a>(<span class="keywordtype">byte</span> = 1);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <a class="code" href="class_h_xstomp.html#a7bab0f7922c390498adb0498275f3f7a">~HXstomp</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordtype">void</span> setSerial(Stream *serialObject);</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a0e3f70030ff3bb856e4694a4000ff70a">sendControlChange</a>(<span class="keywordtype">byte</span> outData1, <span class="keywordtype">byte</span> outData2);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a169362bc1245371b3c7bd51d146e47d6">sendProgramChange</a>(<span class="keywordtype">byte</span> outData1);</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;  <span class="keywordtype">byte</span> <a class="code" href="class_h_xstomp.html#ae99f306b354fa4b2600efd931fdb8389">channelNumberGet</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a59b3f79b3047fa0414b2688a2d5b99c9">channelNumberSet</a>(<span class="keywordtype">byte</span> channel);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a458ca37cfb7c8c757af7231c4ae21c90">exp1</a>(<span class="keywordtype">byte</span> position, <span class="keywordtype">bool</span> invertPolarity = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a316f4ccd3d1b7945ba277fae74315980">exp2</a>(<span class="keywordtype">byte</span> position, <span class="keywordtype">bool</span> invertPolarity = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a8a4d939ec593f903ed0344f9aa0e4310">fs1</a>();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#aba43c153fe945edd72e38a3ea5978f7c">fs2</a>();</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#af74fc7de0ab5d5782abfa4c1ab02e92c">fs3</a>();</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160; </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a9c8771c045d2c09340f159ac998af74d">fs4</a>();</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ad1bccd13d06c53328fad448b68ca9b7a">fs5</a>();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#acfa7183417b5dfcbc82adc0e38cfc77f">looperRecord</a>();</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a4e0510310f0aa2d658e160404b973dbe">looperRecordOverdub</a>();</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#adc17ecb8f88f44b0d85db652dc3ca039">looperPlay</a>();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ab836fae40769ea0df397b78979f27944">looperStop</a>();</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a1a4dcf53f005b80f2fd1e61425db2c9c">looperPlayOnce</a>();</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a8fd0456a5cd09a4dbfc0beb8fb811729">looperUndoRedo</a>();</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a5f11f84516dbf241dc38875f09088863">looperForward</a>();</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a9aa99bd5a9b26b69d454d3ee04bbe644">looperReverse</a>();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ab4de1044b649501fb352998e7924eb25">loopeFullSpeed</a>();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a78c76179705a874caabb243e641c21ad">looperHalfSpeed</a>();</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a865997cc32abe6341de43b206155a095">tapTempo</a>();</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ae085b6109cddc9ea7bf0a36a4bd4b6d1">tuner</a>();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a55022f7f0c583a7f6122d372f98b251f">snapshot1</a>();</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a69e3980e4558d29d448070f84ce85ea4">snapshot2</a>();</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160; </div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a74c05721abfd0f1d7f94f441cb4000e2">snapshot3</a>();</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160; </div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ab6e1821b8e33c4ee868abdfc43b8d198">snapshotNext</a>();</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ab18ff207ecb92e5aa7bc0371086e4cc6">snapshotPrev</a>();</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#adb030e34fd3dc1f1f2cd60b89bd288b4">bypassAllON</a>();</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a6a972e6150edb4cd0f635ef9bc9232b2">bypassAllOFF</a>();</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ab6d145cb0dfafacde5cf9d975e3a9b05">modeStomp</a>();</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a1f7b3a5a90fc8d3143065c3144b0c297">modeScrool</a>();</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ad963e8d152cad365d1f32f5421d9b5cf">modePreset</a>();</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#af4a44b484f74904cf8b71222ee15dfaa">modeSnapshot</a>();</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#aa4e95a6cdf73c2738d3075e80fcce16d">modeNext</a>();</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160; </div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#ab4473f423ec65101f26a65055d3e8725">modePrev</a>();</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a2a78f66b48e42dc9decddea21717e0af">bankNext</a>(<span class="keywordtype">bool</span> samePosition = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160; </div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#abe513c03102ed65a17775f30659259e8">bankPrev</a>(<span class="keywordtype">bool</span> samePosition = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160; </div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a9b810b5c45d3891c274e9a6560cd0682">presetNext</a>();</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160; </div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a783426da1d78e31af5218ad11ba3ab7d">presetPrev</a>();</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  <span class="keywordtype">byte</span> <a class="code" href="class_h_xstomp.html#ac0247f5248960ace64102ee66631e73f">presetGet</a>();</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160; </div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;  <span class="keywordtype">byte</span> <a class="code" href="class_h_xstomp.html#a79d25d28026a430b14f04385175ff0e8">bankNumberGet</a>();</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160; </div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;  <span class="keywordtype">char</span> <a class="code" href="class_h_xstomp.html#ac5c8f885d0d1f5422ca3b54fa854addd">bankLetterGet</a>();</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160; </div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a0735e47b17e44b5451b9a6bca8159fa7">bankSet</a>(<span class="keywordtype">byte</span> number, letter letter);</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160; </div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a0735e47b17e44b5451b9a6bca8159fa7">bankSet</a>(<span class="keywordtype">byte</span> number, <span class="keywordtype">byte</span> AorBorC = 1);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160; </div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a7303aede48d7daf342e2ca6688ddfb2e">presetSet</a>(<span class="keywordtype">byte</span> number);</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;  <span class="keywordtype">void</span> <a class="code" href="class_h_xstomp.html#a99c9f17a9c2cafb2edebc5bafbdc8077">snapshotSet</a>(<span class="keywordtype">byte</span> number);</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160; </div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="class_h_xstomp.html#abfb34a83f376a39040d746078291492b">getExp1Positon</a>();</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160; </div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;  <span class="keywordtype">int</span> <a class="code" href="class_h_xstomp.html#a2986991976bad0399307ea48c1f698a3">getExp2Positon</a>();</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;};</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_h_xstomp_html_abfb34a83f376a39040d746078291492b"><div class="ttname"><a href="class_h_xstomp.html#abfb34a83f376a39040d746078291492b">HXstomp::getExp1Positon</a></div><div class="ttdeci">int getExp1Positon()</div><div class="ttdoc">Return Exp1 Positon.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:425</div></div>
+<div class="ttc" id="aclass_h_xstomp_html_abfb34a83f376a39040d746078291492b"><div class="ttname"><a href="class_h_xstomp.html#abfb34a83f376a39040d746078291492b">HXstomp::getExp1Positon</a></div><div class="ttdeci">int getExp1Positon()</div><div class="ttdoc">Return Exp1 Positon.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:436</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_a55022f7f0c583a7f6122d372f98b251f"><div class="ttname"><a href="class_h_xstomp.html#a55022f7f0c583a7f6122d372f98b251f">HXstomp::snapshot1</a></div><div class="ttdeci">void snapshot1()</div><div class="ttdoc">Enable snapshot 1.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:171</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_adb030e34fd3dc1f1f2cd60b89bd288b4"><div class="ttname"><a href="class_h_xstomp.html#adb030e34fd3dc1f1f2cd60b89bd288b4">HXstomp::bypassAllON</a></div><div class="ttdeci">void bypassAllON()</div><div class="ttdoc">All bypass on.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:199</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_a458ca37cfb7c8c757af7231c4ae21c90"><div class="ttname"><a href="class_h_xstomp.html#a458ca37cfb7c8c757af7231c4ae21c90">HXstomp::exp1</a></div><div class="ttdeci">void exp1(byte position, bool invertPolarity=false)</div><div class="ttdoc">Sets the position of the EXP1 expression pedal.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:54</div></div>
@@ -289,7 +292,7 @@ $(document).ready(function(){initNavTree('_h_xstomp_8h_source.html','');});
 <div class="ttc" id="aclass_h_xstomp_html_ab18ff207ecb92e5aa7bc0371086e4cc6"><div class="ttname"><a href="class_h_xstomp.html#ab18ff207ecb92e5aa7bc0371086e4cc6">HXstomp::snapshotPrev</a></div><div class="ttdeci">void snapshotPrev()</div><div class="ttdoc">Previous snapshot.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:194</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_ae99f306b354fa4b2600efd931fdb8389"><div class="ttname"><a href="class_h_xstomp.html#ae99f306b354fa4b2600efd931fdb8389">HXstomp::channelNumberGet</a></div><div class="ttdeci">byte channelNumberGet()</div><div class="ttdoc">Get the Channel Number object.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:45</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_a9c8771c045d2c09340f159ac998af74d"><div class="ttname"><a href="class_h_xstomp.html#a9c8771c045d2c09340f159ac998af74d">HXstomp::fs4</a></div><div class="ttdeci">void fs4()</div><div class="ttdoc">Switch the FS4 button.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:100</div></div>
-<div class="ttc" id="aclass_h_xstomp_html_a7303aede48d7daf342e2ca6688ddfb2e"><div class="ttname"><a href="class_h_xstomp.html#a7303aede48d7daf342e2ca6688ddfb2e">HXstomp::presetSet</a></div><div class="ttdeci">void presetSet(byte number)</div><div class="ttdoc">Set the preset number on HX Stomp.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:399</div></div>
+<div class="ttc" id="aclass_h_xstomp_html_a7303aede48d7daf342e2ca6688ddfb2e"><div class="ttname"><a href="class_h_xstomp.html#a7303aede48d7daf342e2ca6688ddfb2e">HXstomp::presetSet</a></div><div class="ttdeci">void presetSet(byte number)</div><div class="ttdoc">Set the preset number on HX Stomp.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:410</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_a316f4ccd3d1b7945ba277fae74315980"><div class="ttname"><a href="class_h_xstomp.html#a316f4ccd3d1b7945ba277fae74315980">HXstomp::exp2</a></div><div class="ttdeci">void exp2(byte position, bool invertPolarity=false)</div><div class="ttdoc">Sets the position of the EXP2 expression pedal.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:69</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_adc17ecb8f88f44b0d85db652dc3ca039"><div class="ttname"><a href="class_h_xstomp.html#adc17ecb8f88f44b0d85db652dc3ca039">HXstomp::looperPlay</a></div><div class="ttdeci">void looperPlay()</div><div class="ttdoc">Switch on loop play.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:120</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_a78c76179705a874caabb243e641c21ad"><div class="ttname"><a href="class_h_xstomp.html#a78c76179705a874caabb243e641c21ad">HXstomp::looperHalfSpeed</a></div><div class="ttdeci">void looperHalfSpeed()</div><div class="ttdoc">Enable loop playback at half speed.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:155</div></div>
@@ -301,12 +304,12 @@ $(document).ready(function(){initNavTree('_h_xstomp_8h_source.html','');});
 <div class="ttc" id="aclass_h_xstomp_html_a4e0510310f0aa2d658e160404b973dbe"><div class="ttname"><a href="class_h_xstomp.html#a4e0510310f0aa2d658e160404b973dbe">HXstomp::looperRecordOverdub</a></div><div class="ttdeci">void looperRecordOverdub()</div><div class="ttdoc">Switch on loop overdub recording.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:115</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_abe513c03102ed65a17775f30659259e8"><div class="ttname"><a href="class_h_xstomp.html#abe513c03102ed65a17775f30659259e8">HXstomp::bankPrev</a></div><div class="ttdeci">void bankPrev(bool samePosition=false)</div><div class="ttdoc">Change to previous bank.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:288</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_a8a4d939ec593f903ed0344f9aa0e4310"><div class="ttname"><a href="class_h_xstomp.html#a8a4d939ec593f903ed0344f9aa0e4310">HXstomp::fs1</a></div><div class="ttdeci">void fs1()</div><div class="ttdoc">Switch the FS1 button.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:85</div></div>
-<div class="ttc" id="aclass_h_xstomp_html_a2986991976bad0399307ea48c1f698a3"><div class="ttname"><a href="class_h_xstomp.html#a2986991976bad0399307ea48c1f698a3">HXstomp::getExp2Positon</a></div><div class="ttdeci">int getExp2Positon()</div><div class="ttdoc">Return Exp2 Positon.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:430</div></div>
+<div class="ttc" id="aclass_h_xstomp_html_a2986991976bad0399307ea48c1f698a3"><div class="ttname"><a href="class_h_xstomp.html#a2986991976bad0399307ea48c1f698a3">HXstomp::getExp2Positon</a></div><div class="ttdeci">int getExp2Positon()</div><div class="ttdoc">Return Exp2 Positon.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:441</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_af74fc7de0ab5d5782abfa4c1ab02e92c"><div class="ttname"><a href="class_h_xstomp.html#af74fc7de0ab5d5782abfa4c1ab02e92c">HXstomp::fs3</a></div><div class="ttdeci">void fs3()</div><div class="ttdoc">Switch the FS3 button.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:95</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_a9aa99bd5a9b26b69d454d3ee04bbe644"><div class="ttname"><a href="class_h_xstomp.html#a9aa99bd5a9b26b69d454d3ee04bbe644">HXstomp::looperReverse</a></div><div class="ttdeci">void looperReverse()</div><div class="ttdoc">Enable loop playback reverse.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:145</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_acfa7183417b5dfcbc82adc0e38cfc77f"><div class="ttname"><a href="class_h_xstomp.html#acfa7183417b5dfcbc82adc0e38cfc77f">HXstomp::looperRecord</a></div><div class="ttdeci">void looperRecord()</div><div class="ttdoc">Switch on loop recording.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:110</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_ab836fae40769ea0df397b78979f27944"><div class="ttname"><a href="class_h_xstomp.html#ab836fae40769ea0df397b78979f27944">HXstomp::looperStop</a></div><div class="ttdeci">void looperStop()</div><div class="ttdoc">Switch off loop play.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:125</div></div>
-<div class="ttc" id="aclass_h_xstomp_html"><div class="ttname"><a href="class_h_xstomp.html">HXstomp</a></div><div class="ttdef"><b>Definition:</b> HXstomp.h:86</div></div>
+<div class="ttc" id="aclass_h_xstomp_html"><div class="ttname"><a href="class_h_xstomp.html">HXstomp</a></div><div class="ttdef"><b>Definition:</b> HXstomp.h:87</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_a69e3980e4558d29d448070f84ce85ea4"><div class="ttname"><a href="class_h_xstomp.html#a69e3980e4558d29d448070f84ce85ea4">HXstomp::snapshot2</a></div><div class="ttdeci">void snapshot2()</div><div class="ttdoc">Enable snapshot 2.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:177</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_a169362bc1245371b3c7bd51d146e47d6"><div class="ttname"><a href="class_h_xstomp.html#a169362bc1245371b3c7bd51d146e47d6">HXstomp::sendProgramChange</a></div><div class="ttdeci">void sendProgramChange(byte outData1)</div><div class="ttdoc">Send Program Change message.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:36</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_a0735e47b17e44b5451b9a6bca8159fa7"><div class="ttname"><a href="class_h_xstomp.html#a0735e47b17e44b5451b9a6bca8159fa7">HXstomp::bankSet</a></div><div class="ttdeci">void bankSet(byte number, letter letter)</div><div class="ttdoc">Set the bank number on HX Stomp.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:388</div></div>
@@ -316,7 +319,7 @@ $(document).ready(function(){initNavTree('_h_xstomp_8h_source.html','');});
 <div class="ttc" id="aclass_h_xstomp_html_ad1bccd13d06c53328fad448b68ca9b7a"><div class="ttname"><a href="class_h_xstomp.html#ad1bccd13d06c53328fad448b68ca9b7a">HXstomp::fs5</a></div><div class="ttdeci">void fs5()</div><div class="ttdoc">Switch the FS5 button.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:105</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_ae085b6109cddc9ea7bf0a36a4bd4b6d1"><div class="ttname"><a href="class_h_xstomp.html#ae085b6109cddc9ea7bf0a36a4bd4b6d1">HXstomp::tuner</a></div><div class="ttdeci">void tuner()</div><div class="ttdoc">Tuner screen on/of.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:166</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_a6fd8ec55405027a895c97f316b1043ef"><div class="ttname"><a href="class_h_xstomp.html#a6fd8ec55405027a895c97f316b1043ef">HXstomp::HXstomp</a></div><div class="ttdeci">HXstomp(byte=1)</div><div class="ttdoc">Construct a new HXstomp::HXstomp object.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:4</div></div>
-<div class="ttc" id="aclass_h_xstomp_html_a99c9f17a9c2cafb2edebc5bafbdc8077"><div class="ttname"><a href="class_h_xstomp.html#a99c9f17a9c2cafb2edebc5bafbdc8077">HXstomp::snapshotSet</a></div><div class="ttdeci">void snapshotSet(byte number)</div><div class="ttdoc">Set the Snapshot.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:407</div></div>
+<div class="ttc" id="aclass_h_xstomp_html_a99c9f17a9c2cafb2edebc5bafbdc8077"><div class="ttname"><a href="class_h_xstomp.html#a99c9f17a9c2cafb2edebc5bafbdc8077">HXstomp::snapshotSet</a></div><div class="ttdeci">void snapshotSet(byte number)</div><div class="ttdoc">Set the Snapshot.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:418</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_a79d25d28026a430b14f04385175ff0e8"><div class="ttname"><a href="class_h_xstomp.html#a79d25d28026a430b14f04385175ff0e8">HXstomp::bankNumberGet</a></div><div class="ttdeci">byte bankNumberGet()</div><div class="ttdoc">Get the Bank Number.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:363</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_a74c05721abfd0f1d7f94f441cb4000e2"><div class="ttname"><a href="class_h_xstomp.html#a74c05721abfd0f1d7f94f441cb4000e2">HXstomp::snapshot3</a></div><div class="ttdeci">void snapshot3()</div><div class="ttdoc">Enable snapshot 3.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:183</div></div>
 <div class="ttc" id="aclass_h_xstomp_html_ad963e8d152cad365d1f32f5421d9b5cf"><div class="ttname"><a href="class_h_xstomp.html#ad963e8d152cad365d1f32f5421d9b5cf">HXstomp::modePreset</a></div><div class="ttdeci">void modePreset()</div><div class="ttdoc">Enable preset mode.</div><div class="ttdef"><b>Definition:</b> HXstomp.cpp:219</div></div>

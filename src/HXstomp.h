@@ -83,6 +83,7 @@ enum letter
   C = 3
 };
 
+
 class HXstomp
 {
 private:
@@ -395,6 +396,14 @@ public:
      * @param letter letter bank letter A or B or C 
      */
   void bankSet(byte number, letter letter);
+
+  /**
+     * @brief Set the bank number on HX Stomp
+     * 
+     * @param number byte bank number from 1 - 42
+     * @param AorBorC byte bank letter A = 1, B = 2, C = 3
+     */
+  void bankSet(byte number, byte AorBorC = 1);
 
   /**
      * @brief Set the preset number on HX Stomp

@@ -396,6 +396,17 @@ void HXstomp::bankSet(byte number, letter letter)
     sendProgramChange(presetNumber);
 };
 
+void HXstomp::bankSet(byte number, byte AorBorC)
+{
+    number = constrain(number, 1, 42);
+    bankNumber = number;
+    AorBorC = constrain(AorBorC, 1, 3);
+    bankLetter = AorBorC;
+    AorBorC = map(AorBorC, 1, 3, 3, 1);
+    presetNumber = number * 3 - AorBorC;
+    sendProgramChange(presetNumber);
+};
+
 void HXstomp::presetSet(byte number)
 {
     number = constrain(number, 0, 125);

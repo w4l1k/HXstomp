@@ -6,6 +6,7 @@ var class_h_xstomp =
     [ "bankNext", "class_h_xstomp.html#a2a78f66b48e42dc9decddea21717e0af", null ],
     [ "bankNumberGet", "class_h_xstomp.html#a79d25d28026a430b14f04385175ff0e8", null ],
     [ "bankPrev", "class_h_xstomp.html#abe513c03102ed65a17775f30659259e8", null ],
+    [ "bankSet", "class_h_xstomp.html#a7c6d9c92e3eca1c6c7227d7da651fdaf", null ],
     [ "bankSet", "class_h_xstomp.html#a0735e47b17e44b5451b9a6bca8159fa7", null ],
     [ "bypassAllOFF", "class_h_xstomp.html#a6a972e6150edb4cd0f635ef9bc9232b2", null ],
     [ "bypassAllON", "class_h_xstomp.html#adb030e34fd3dc1f1f2cd60b89bd288b4", null ],
