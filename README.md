@@ -1,6 +1,6 @@
 # HXstomp
 
-Library for controlling HX Stomp via Midi
+Library for controlling Line 6  HX Stomp via Midi
 
 Read https://www.arduino.cc/en/tutorial/midi
 
