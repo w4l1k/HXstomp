@@ -54,9 +54,12 @@ void HXstomp::channelNumberSet(byte channel)
 void HXstomp::exp1(byte position, bool invertPolarity)
 {
     position = constrain(position, 0, 100);
-    if(invertPolarity == true) {
+    if (invertPolarity == true)
+    {
         position = map(position, 100, 0, 0, 127);
-    } else {
+    }
+    else
+    {
         position = map(position, 0, 100, 0, 127);
     }
     byte value constrain(position, 0, 127);
@@ -66,9 +69,12 @@ void HXstomp::exp1(byte position, bool invertPolarity)
 void HXstomp::exp2(byte position, bool invertPolarity)
 {
     position = constrain(position, 0, 100);
-    if(invertPolarity == true) {
+    if (invertPolarity == true)
+    {
         position = map(position, 100, 0, 0, 127);
-    } else {
+    }
+    else
+    {
         position = map(position, 0, 100, 0, 127);
     }
     byte value constrain(position, 0, 127);
@@ -359,11 +365,11 @@ byte HXstomp::bankGet()
     return bankNumber;
 };
 
-void HXstomp::bankSet(byte number, byte AorBorC)
+void HXstomp::bankSet(byte number, letter letter)
 {
     number = constrain(number, 1, 42);
     bankNumber = number;
-    AorBorC = constrain(AorBorC, 1, 3);
+    int AorBorC = constrain(letter, 1, 3);
     bankLetter = AorBorC;
     AorBorC = map(AorBorC, 1, 3, 3, 1);
     presetNumber = number * 3 - AorBorC;
@@ -396,10 +402,12 @@ void HXstomp::snapshotSet(byte number)
     }
 };
 
-   int HXstomp::getExp1Positon() {
-     return exp1Position;
-   }
+int HXstomp::getExp1Positon()
+{
+    return exp1Position;
+}
 
-    int HXstomp::getExp2Positon() {
-     return exp2Position;
-   }
+int HXstomp::getExp2Positon()
+{
+    return exp2Position;
+}
