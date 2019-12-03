@@ -7,7 +7,13 @@ void setup()
     Serial.begin(31250);
     hxstomp.setSerial(&Serial);
 
-    hxstomp.presetSet(0);
+    hxstomp.bankSet(1, hxstomp.A);
+    delay(1000);
+    hxstomp.bankSet(1, hxstomp.B);
+    delay(1000);
+    hxstomp.bankSet(1, hxstomp.C);
+    delay(1000);
+
 }
 
 void loop()
