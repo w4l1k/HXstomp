@@ -368,18 +368,25 @@ public:
   void presetPrev();
 
   /**
-     * @brief Get the Preset Number object
+     * @brief Get the Preset Number 
      * 
      * @return byte preset number
      */
   byte presetGet();
 
   /**
-     * @brief Get the Bank Number object
+     * @brief Get the Bank Number 
      * 
      * @return byte bank number
      */
-  byte bankGet();
+  byte bankNumberGet();
+
+  /**
+     * @brief Get the Bank letter 
+     * 
+     * @return char bank letter
+     */
+  char bankLetterGet();
 
   /**
      * @brief Set the bank number on HX Stomp
@@ -403,8 +410,18 @@ public:
      */
   void snapshotSet(byte number);
 
+  /**
+   * @brief Return Exp1 Positon 
+   * 
+   * @return int exp position
+   */
   int getExp1Positon();
 
+  /**
+   * @brief Return Exp2 Positon 
+   * 
+   * @return int exp position
+   */
   int getExp2Positon();
 };
 

@@ -360,9 +360,29 @@ byte HXstomp::presetGet()
     return presetNumber;
 };
 
-byte HXstomp::bankGet()
+byte HXstomp::bankNumberGet()
 {
     return bankNumber;
+};
+
+char HXstomp::bankLetterGet()
+{
+    if (bankLetter == 1)
+    {
+        return 'A';
+    }
+    else if (bankLetter == 2)
+    {
+        return 'B';
+    }
+    else if (bankLetter == 3)
+    {
+        return 'C';
+    }
+    else
+    {
+        return 'A';
+    }
 };
 
 void HXstomp::bankSet(byte number, letter letter)

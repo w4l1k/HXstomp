@@ -2,10 +2,11 @@ var class_h_xstomp =
 [
     [ "HXstomp", "class_h_xstomp.html#a6fd8ec55405027a895c97f316b1043ef", null ],
     [ "~HXstomp", "class_h_xstomp.html#a7bab0f7922c390498adb0498275f3f7a", null ],
-    [ "bankGet", "class_h_xstomp.html#a5cc2284d12d5d26ae6ef91faba3c7946", null ],
+    [ "bankLetterGet", "class_h_xstomp.html#ac5c8f885d0d1f5422ca3b54fa854addd", null ],
     [ "bankNext", "class_h_xstomp.html#a2a78f66b48e42dc9decddea21717e0af", null ],
+    [ "bankNumberGet", "class_h_xstomp.html#a79d25d28026a430b14f04385175ff0e8", null ],
     [ "bankPrev", "class_h_xstomp.html#abe513c03102ed65a17775f30659259e8", null ],
-    [ "bankSet", "class_h_xstomp.html#a7c6d9c92e3eca1c6c7227d7da651fdaf", null ],
+    [ "bankSet", "class_h_xstomp.html#a0735e47b17e44b5451b9a6bca8159fa7", null ],
     [ "bypassAllOFF", "class_h_xstomp.html#a6a972e6150edb4cd0f635ef9bc9232b2", null ],
     [ "bypassAllON", "class_h_xstomp.html#adb030e34fd3dc1f1f2cd60b89bd288b4", null ],
     [ "channelNumberGet", "class_h_xstomp.html#ae99f306b354fa4b2600efd931fdb8389", null ],

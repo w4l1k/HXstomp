@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hxstomp_15',['HXstomp',['../class_h_xstomp.html',1,'HXstomp'],['../class_h_xstomp.html#a6fd8ec55405027a895c97f316b1043ef',1,'HXstomp::HXstomp()']]],
-  ['hxstomp_2eh_16',['HXstomp.h',['../_h_xstomp_8h.html',1,'']]]
+  ['getexp1positon_16',['getExp1Positon',['../class_h_xstomp.html#abfb34a83f376a39040d746078291492b',1,'HXstomp']]],
+  ['getexp2positon_17',['getExp2Positon',['../class_h_xstomp.html#a2986991976bad0399307ea48c1f698a3',1,'HXstomp']]]
 ];

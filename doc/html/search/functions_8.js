@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['sendcontrolchange_86',['sendControlChange',['../class_h_xstomp.html#a0e3f70030ff3bb856e4694a4000ff70a',1,'HXstomp']]],
-  ['sendprogramchange_87',['sendProgramChange',['../class_h_xstomp.html#a169362bc1245371b3c7bd51d146e47d6',1,'HXstomp']]],
-  ['snapshot1_88',['snapshot1',['../class_h_xstomp.html#a55022f7f0c583a7f6122d372f98b251f',1,'HXstomp']]],
-  ['snapshot2_89',['snapshot2',['../class_h_xstomp.html#a69e3980e4558d29d448070f84ce85ea4',1,'HXstomp']]],
-  ['snapshot3_90',['snapshot3',['../class_h_xstomp.html#a74c05721abfd0f1d7f94f441cb4000e2',1,'HXstomp']]],
-  ['snapshotnext_91',['snapshotNext',['../class_h_xstomp.html#ab6e1821b8e33c4ee868abdfc43b8d198',1,'HXstomp']]],
-  ['snapshotprev_92',['snapshotPrev',['../class_h_xstomp.html#ab18ff207ecb92e5aa7bc0371086e4cc6',1,'HXstomp']]],
-  ['snapshotset_93',['snapshotSet',['../class_h_xstomp.html#a99c9f17a9c2cafb2edebc5bafbdc8077',1,'HXstomp']]]
+  ['presetget_88',['presetGet',['../class_h_xstomp.html#ac0247f5248960ace64102ee66631e73f',1,'HXstomp']]],
+  ['presetnext_89',['presetNext',['../class_h_xstomp.html#a9b810b5c45d3891c274e9a6560cd0682',1,'HXstomp']]],
+  ['presetprev_90',['presetPrev',['../class_h_xstomp.html#a783426da1d78e31af5218ad11ba3ab7d',1,'HXstomp']]],
+  ['presetset_91',['presetSet',['../class_h_xstomp.html#a7303aede48d7daf342e2ca6688ddfb2e',1,'HXstomp']]]
 ];
