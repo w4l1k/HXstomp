@@ -407,6 +407,24 @@ void HXstomp::bankSet(byte number, byte AorBorC)
     sendProgramChange(presetNumber);
 };
 
+void HXstomp::bankSetA()
+{
+    bankSet(bankNumber, A);
+};
+
+
+void HXstomp::bankSetB()
+{
+    bankSet(bankNumber, B);
+};
+
+
+void HXstomp::bankSetC()
+{
+    bankSet(bankNumber, B);
+};
+
+
 void HXstomp::presetSet(byte number)
 {
     number = constrain(number, 0, 125);
