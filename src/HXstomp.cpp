@@ -412,18 +412,15 @@ void HXstomp::bankSetA()
     bankSet(bankNumber, A);
 };
 
-
 void HXstomp::bankSetB()
 {
     bankSet(bankNumber, B);
 };
 
-
 void HXstomp::bankSetC()
 {
-    bankSet(bankNumber, B);
+    bankSet(bankNumber, C);
 };
-
 
 void HXstomp::presetSet(byte number)
 {
