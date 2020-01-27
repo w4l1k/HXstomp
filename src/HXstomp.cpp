@@ -147,7 +147,7 @@ void HXstomp::looperReverse()
     sendControlChange(CC_LOOPER_REVERSE, V_LOOPER_REVERSE);
 };
 
-void HXstomp::loopeFullSpeed()
+void HXstomp::looperFullSpeed()
 {
     sendControlChange(CC_LOOPER_FULL_HALF, V_LOOPER_FULL);
 };

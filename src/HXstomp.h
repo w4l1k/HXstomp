@@ -240,7 +240,7 @@ public:
      * @brief Enable loop playback at full speed
      * 
      */
-  void loopeFullSpeed();
+  void looperFullSpeed();
 
   /**
      * @brief Enable loop playback at half speed
