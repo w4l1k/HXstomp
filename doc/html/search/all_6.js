@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['loopefullspeed_23',['loopeFullSpeed',['../class_h_xstomp.html#ab4de1044b649501fb352998e7924eb25',1,'HXstomp']]],
-  ['looperforward_24',['looperForward',['../class_h_xstomp.html#a5f11f84516dbf241dc38875f09088863',1,'HXstomp']]],
+  ['looperforward_23',['looperForward',['../class_h_xstomp.html#a5f11f84516dbf241dc38875f09088863',1,'HXstomp']]],
+  ['looperfullspeed_24',['looperFullSpeed',['../class_h_xstomp.html#a3d17495db05ac20eb7fa7eff11fca0c0',1,'HXstomp']]],
   ['looperhalfspeed_25',['looperHalfSpeed',['../class_h_xstomp.html#a78c76179705a874caabb243e641c21ad',1,'HXstomp']]],
   ['looperplay_26',['looperPlay',['../class_h_xstomp.html#adc17ecb8f88f44b0d85db652dc3ca039',1,'HXstomp']]],
   ['looperplayonce_27',['looperPlayOnce',['../class_h_xstomp.html#a1a4dcf53f005b80f2fd1e61425db2c9c',1,'HXstomp']]],
