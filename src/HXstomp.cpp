@@ -336,7 +336,7 @@ void HXstomp::bankPrev(bool samePosition)
 void HXstomp::presetNext()
 {
     presetNumber++;
-    if (presetNumber >= 125)
+    if (presetNumber > 125)
     {
         presetNumber = 0;
     }
@@ -347,7 +347,7 @@ void HXstomp::presetNext()
 void HXstomp::presetPrev()
 {
     presetNumber--;
-    if (presetNumber <= 0)
+    if (presetNumber < 0)
     {
         presetNumber = 125;
     }
